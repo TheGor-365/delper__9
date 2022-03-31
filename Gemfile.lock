@@ -121,6 +121,7 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.0.3)
       net-http-persistent (>= 3.1)
+    ffi (1.15.0)
     ffi (1.15.0-x64-mingw32)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -171,8 +172,10 @@ GEM
     nested_form (0.3.2)
     net-http-persistent (4.0.1)
       connection_pool (~> 2.2)
-    nio4r (2.5.7)
+    nio4r (2.5.8)
     nokogiri (1.11.3-x64-mingw32)
+      racc (~> 1.4)
+    nokogiri (1.11.3-x86_64-linux)
       racc (~> 1.4)
     oauth2 (1.4.7)
       faraday (>= 0.8, < 2.0)
@@ -195,10 +198,11 @@ GEM
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
     orm_adapter (0.5.0)
+    pg (1.2.3)
     pg (1.2.3-x64-mingw32)
     popper_js (1.16.0)
     public_suffix (4.0.6)
-    puma (4.3.7)
+    puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
@@ -261,6 +265,8 @@ GEM
     rubyzip (2.3.0)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sassc-rails (2.1.2)
@@ -315,6 +321,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
@@ -330,7 +337,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-google-oauth2
   pg
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.3, >= 6.0.3.2)
   rails_admin
   sass-rails (>= 6)
