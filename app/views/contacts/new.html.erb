@@ -15,10 +15,10 @@
       </ul>
     <% end %>
 
-    <% if account_signed_in? %>
+    <% if customer_signed_in? %>
 
       <%= f.label :email %>
-      <%= f.text_field :email, value: current_account.email, class: 'form-control mb-3' %>
+      <%= f.text_field :email, value: current_customer.email, class: 'form-control mb-3' %>
 
     <% else %>
 

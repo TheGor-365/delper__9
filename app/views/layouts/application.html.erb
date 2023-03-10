@@ -134,9 +134,9 @@
 
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown pr-2">
-            <% if account_signed_in? %>
+            <% if customer_signed_in? %>
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <%= current_account.username %>
+                <%= current_customer.username %>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -158,14 +158,14 @@
 
                 <div class="dropdown-divider"></div>
 
-                <%= link_to 'Sign out', destroy_account_session_path, method: :delete, class: 'dropdown-item text-decoration-none' %>
+                <%= link_to 'Sign out', destroy_customer_session_path, method: :delete, class: 'dropdown-item text-decoration-none' %>
             <% else %>
-                <%= link_to 'Sign in', new_account_session_path, class: 'nav-link text-decoration-none' %>
+                <%= link_to 'Sign in', new_customer_session_path, class: 'nav-link text-decoration-none' %>
               </div>
             <% end %>
           </li>
 
-          <% if account_signed_in? %>
+          <% if customer_signed_in? %>
             <li class="nav-item active">
               <li class="nav-item dropdown pr-5 mr-5">
 

@@ -1,5 +1,5 @@
 class TechnologiesController < ApplicationController
-  before_action :authenticate_account!, only: [:new, :create]
+  before_action :authenticate_customer!, only: [:new, :create]
 
   def index
     @technologies = Technology.all

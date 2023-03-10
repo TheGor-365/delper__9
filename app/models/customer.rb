@@ -1,8 +1,8 @@
-class Account < ApplicationRecord
+class Customer < ApplicationRecord
   # after_create :send_admin_mail
 
   # def send_admin_mail
-  #   AccountMailer.send_welcome_email(self).deliver_later
+  #   CustomerMailer.send_welcome_email(self).deliver_later
   # end
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
