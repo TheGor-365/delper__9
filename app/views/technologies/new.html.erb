@@ -3,7 +3,7 @@
 </h1>
 
 <div class="shadow-lg mt-5 mb-5 p-5">
-  <% if user_signed_in? %>
+  <% if account_signed_in? %>
     <%= form_for :technology, url: technologies_path do |f| %>
 
       <%= f.label :title %>

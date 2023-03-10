@@ -1,5 +1,5 @@
 class QuestionsController < ApplicationController
-  before_action :authenticate_user!, only: [:create]
+  before_action :authenticate_account!, only: [:create]
 
   def index
     @technology = Technology.find(params[:technology_id])

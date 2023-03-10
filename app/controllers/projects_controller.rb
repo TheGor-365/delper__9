@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_account!
 
   def index
     @technology = Technology.find(params[:technology_id])

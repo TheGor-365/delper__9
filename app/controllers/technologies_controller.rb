@@ -1,5 +1,5 @@
 class TechnologiesController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create]
+  before_action :authenticate_account!, only: [:new, :create]
 
   def index
     @technologies = Technology.all
@@ -13,7 +13,7 @@ class TechnologiesController < ApplicationController
 
   def new
     @technologies = Technology.all
-    @author = current_user.username
+    @author = current_account.username
 
   end
 

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
 
   get 'terms' => 'pages#terms'
@@ -12,11 +12,11 @@ Rails.application.routes.draw do
   resources :s_projects
   resources :s_answers
 
-  devise_for :users
+  devise_for :accounts
   get 'home/index'
   root to: "home#index"
-  devise_scope :user do
-    get '/users/sign_out' => 'devise/sessions#destroy'
+  devise_scope :account do
+    get '/accounts/sign_out' => 'devise/sessions#destroy'
   end
 
 
