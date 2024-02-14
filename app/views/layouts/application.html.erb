@@ -5,26 +5,43 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_path 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_path "/assets/application.js", "data-turbo-track": "reload", defer: true %>
+    <% stylesheet_path 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <% stylesheet_path "/assets/application.js", "data-turbo-track": "reload", defer: true %>
 
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    >
 
     <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous">
+    </script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous">
+    </script>
   </head>
 
   <body class="mt-5">
     <header class="pb-5">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-
-        <a class="navbar-brand" href="/">delper</a>
-
+        <a class="navbar-brand" href="/">
+          delper
+        </a>
         <form class="form-inline my-2 my-lg-0 mr-5">
           <input class="form-control-sm mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0 btn-sm" type="submit">Find</button>
@@ -36,21 +53,25 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-
             <li class="nav-item">
               <%= link_to 'Terms', terms_path, class: 'nav-link' %>
             </li>
-
             <li class="nav-item">
               <%= link_to 'About', about_path, class: 'nav-link' %>
             </li>
-
             <li class="nav-item">
               <%= link_to 'Contacts', new_contacts_path, class: 'nav-link mr-5' %>
             </li>
-
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Technologies
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -64,7 +85,15 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Lessons
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -80,7 +109,15 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Questions
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -96,7 +133,15 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Answers
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -114,7 +159,15 @@
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 Projects
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -135,29 +188,31 @@
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown pr-2">
             <% if customer_signed_in? %>
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
                 <%= current_customer.username %>
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
                 <%= link_to s_questions_path, class: 'text-muted dropdown-item' do %>
                   <small class="text-muted">My questions</small>
                 <% end %>
-
                 <%= link_to s_answers_path, class: 'text-muted dropdown-item' do %>
                   <small class="text-muted">My answers</small>
                 <% end %>
-
                 <%= link_to s_lessons_path, class: 'text-muted dropdown-item' do %>
                   <small class="text-muted">My lessons</small>
                 <% end %>
-
                 <%= link_to s_projects_path, class: 'text-muted dropdown-item' do %>
                   <small class="text-muted">My projects</small>
                 <% end %>
-
                 <div class="dropdown-divider"></div>
-
                 <%= link_to 'Sign out', destroy_customer_session_path, method: :delete, class: 'dropdown-item text-decoration-none' %>
             <% else %>
                 <%= link_to 'Sign in', new_customer_session_path, class: 'nav-link text-decoration-none' %>
@@ -168,8 +223,15 @@
           <% if customer_signed_in? %>
             <li class="nav-item active">
               <li class="nav-item dropdown pr-5 mr-5">
-
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   create
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -180,7 +242,6 @@
                   <a class="dropdown-item" href="<%= new_s_project_path %>"><small class="text-muted">Project</small></a>
                 </div>
               </li>
-
           <% else %>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Add</a>
@@ -191,30 +252,23 @@
     </header>
 
     <div class="container">
-      <div class="row">
-
-      </div>
+      <div class="row"></div>
     </div>
 
     <div class="container">
       <div class="row">
-
         <div class="border-left col-md-3 mt-5 mb-5 ml-0 window-full section fixed-left">
-
           <div>
             <h6 class="text-muted mb-0 mt-2">
               Application content
             </h6>
           </div>
-
           <div class="p-3 mt-5 mb-5">
             <%= link_to 'Technology', :technologies, class: 'text-decoration-none' %>
           </div>
-
         </div>
 
         <div class="col-md-7 mt-5 mb-5 ml-0 mr-0">
-
           <% if notice && notice.length > 0 %>
             <div class="text-success p-0">
               <p class="notice p-0"><%= notice.capitalize %></p>
@@ -228,23 +282,18 @@
           <% end %>
 
           <%= yield %>
-
         </div>
 
         <div class="border-right col-md-2 mt-5 mb-5 ml-0 window-full section fixed-left">
-
           <div>
             <h6 class="text-muted mb-0 mt-2">
               Page content
             </h6>
           </div>
-
           <div class="p-3 mt-5 mb-5">
             <%= link_to 'Technology', technologies_path, class: 'text-decoration-none' %>
           </div>
-
         </div>
-
       </div>
     </div>
   </body>
